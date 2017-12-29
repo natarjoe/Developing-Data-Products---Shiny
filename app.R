@@ -154,7 +154,7 @@ server <- function(input, output) {
   
  uicol <- reactive({
    
-   if(input$ShowText==FALSE) {c <- rgb(0,0,0,alpha=0.0) } else {c <- c("blue")}
+   if(input$ShowText==FALSE) {c <- rgb(0,0,0,alpha=0.0) } else {c <- c("brown")}
    return(c)
    
  })
