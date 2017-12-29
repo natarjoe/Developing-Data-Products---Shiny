@@ -4,7 +4,7 @@ Shiny application showing Dog Breeds
 
 ### Please see the full Shiny  app by clicking the following link
 
-https://natarjoe.shinyapps.io/selectyourpuppy/
+https://natarjoe.shinyapps.io/Dog_Breed/
 
 
 ### This app shows the following details of some well known Dog breeds.
