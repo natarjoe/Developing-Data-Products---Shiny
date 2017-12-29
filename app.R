@@ -10,7 +10,7 @@ library(plotly)
 ui <- fluidPage(
   
    headerPanel("Select your puppy ! " ),HTML("</BR</BR></BR></BR><i><h3 style='color:#FF152A'>
-   This Shiny app is best viewed in Chrome. IE is very slow"),HTML("</BR></i></h3>"),
+   This Shiny app is best viewed in Chrome/Firefox/IE. Microsoft edge is very slow"),HTML("</BR></i></h3>"),
    
    
    sidebarLayout(

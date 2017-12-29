@@ -2,22 +2,47 @@ Dog Breeds
 ========================================================
 author: Joseph Natarajan
 date: 12/29/17
-autosize: true
+autosize:true
 
 Looking for the perfect Puppy !
 ========================================================
+  
+  
+  
+Searching for the perfect puppy can be a time consuming task since many factors have to be taken into account like life style,location, age, profession, personal preferences,etc.
+  
+  
+This app  will help you narrow your search.
+  
+  
+You will have access to details for over 100 breeds that can be searched by height, weight and intelligence using a simple user interface !!
 
-Searching for the perfect puppy can be a time consuming task since many factors have to be taken into account like life style, preferences,etc.
+Summary
+========================================================  
 
-This app will help you narrow your search.It has details for about 100 breeds and can be searched by height, weight and intelligence.
 
 
-Interactive Application
+1) Interactive Application (URL Link) (Slide 4)
+  
+2) Data Source & R Code (Slide 5)
+
+3) Data - Sample  (Slide 6)
+
+4) Scatter Plot - All Data Points (Slide 7)
+
+5) R Code for this Project (URL Link)(slide 8)
+  
+  
+Interactive Application (URL Link)
 ========================================================
-
-To view the app and search the Dogs database please click the following link
+To work with the interactive app and search the Dogs database, please click the following link.
 
 https://natarjoe.shinyapps.io/Dog_Breed/
+
+Please see Image of the Interactive Application below
+```{r, out.width = "700px",echo=FALSE}
+knitr::include_graphics("appimage.png")
+```
 
 Data for this Project
 ========================================================
@@ -28,7 +53,7 @@ The data for this visual is available in https://data.world/
 
 1) AKC Breed Info.csv 2) dog_intelligence.csv 
 
-```{r, echo=TRUE, message=FALSE,warning=FALSE}
+```{r, echo=TRUE, message=FALSE,warning=FALSE,fig.width=14}
 
 
 #setwd("~/R/Dog/Dog")
@@ -68,18 +93,18 @@ The data for this visual is available in https://data.world/
   
   df <- df[,c("Breed","height_inches","weight_lbs","Classification")]
   
-  df
+  table(df)
 
 
 ```
 
 
 
-Data for this Project (Data)
+Data for this Project (Data - Sample)
 ========================================================
 
 
-```{r, echo=FALSE, message=FALSE,warning=FALSE}
+```{r, echo=FALSE, message=FALSE,warning=FALSE,fig.width=14,size='tiny'}
 
 
 #setwd("~/R/Dog/Dog")
@@ -124,8 +149,21 @@ Data for this Project (Data)
 
 ```
 
+Scatter Plot showing all the data points (Dog Height,Weight, Intelligence)
+=========================================================================
 
-Code for this Project
+```{r, echo=TRUE, message=FALSE,warning=FALSE,fig.width=20,fig.height=7}
+
+library(ggplot2)
+
+ qplot(weight_lbs, height_inches, colour = Classification, shape = Classification,    data = df) + geom_point(size=5)
+ 
+```
+ 
+ 
+Code for this Project (URL Link)
 ========================================================
 
 https://github.com/natarjoe/Developing-Data-Products---Shiny 
+
+To open this link please right click and open in new window.
