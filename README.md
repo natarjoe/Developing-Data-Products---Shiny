@@ -31,7 +31,7 @@ https://natarjoe.shinyapps.io/selectyourpuppy/
 
 1) Plot - Scatter Plot showing height, weight and intelligence 
 
-2)Table - Data Table
+2) Table - Data Table
 
 3) Documentation 
 
